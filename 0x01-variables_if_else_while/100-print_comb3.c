@@ -1,25 +1,26 @@
 #include <stdio.h>
-
 /**
- * main - view
- * Return: (0)
- *
- */
+* main - view
+* Return: (0)
+*/
+
 int main(void)
 {
-int x, y;
+int a, b;
 
-for (x = 0; x < 9; x++)
-	{
-for (y = x + 1; y < 10; y++)
-	{
-putchar((x % 10) + '0');
-putchar((y % 10) + '0');
-
-if (x == 8 && y == 9)
-putchar(',');
+for (a = 48; a <= 57; a++)
+{
+for (b = a + 1; b <= 57; b++)
+{
+putchar(a);
+putchar(b);
+if (a != 56 || b != 57)
+{
+putchar(44);
+putchar(32);
 }
 }
-	putchar('\n');
-	return (0);
+}
+putchar(10);
+return (0);
 }

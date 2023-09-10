@@ -1,26 +1,29 @@
 #include <stdio.h>
 /**
- * main - digits
- * Return: (0)
+* main - view
+* Return: (0)
 */
 
 int main(void)
 {
-	int x, y;
+int a, b;
 
-for (x = 0; x <= 98; x++)
+for (a = 0; a <= 99; a++)
 {
-for (y = x + 1; y <= 99; y++)
+for (b = 0; b <= 99; b++)
 {
-putchar((x / 10) + '0');
-putchar((x % 10) + '0');
-putchar((y / 10) + '0');
-putchar((y % 10) + '0');
-if (x == 98 && y == 99)
-putchar('.');
+putchar((a / 10) + '0');
+putchar((a % 10) + '0');
+putchar(32);
+putchar((b / 10) + '0');
+putchar((a % 10) + '0');
+if (a != 99 || b != 99)
+{
+putchar(44);
+putchar(32);
 }
 }
-putchar('\n');
-
-	return (0);
+}
+putchar(10);
+return (0);
 }

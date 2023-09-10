@@ -1,28 +1,31 @@
 #include <stdio.h>
-
 /**
-* main - combinstions
+* main - view
 * Return: (0)
 */
 
 int main(void)
 {
-	 int x, y, z;
-	for (x = 0; x < 8; x++)
-	{
-		for (y = x + 1; y < 9; y++)
-		{
-			for (z = y + 1; z < 10; z++)
-			{
-				putchar((x % 10) + '0');
-				putchar((y % 10) + '0');
-				putchar ((z % 10) + '0');
-				if (x == 7 && y == 8 && z == 9)
-					continue;
-				putchar(',');
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+int a, b, c;
+
+for (a = 48; a <= 55; a++)
+{
+for (b = a + 1; b <= 56; b++)
+{
+for (c = b + 1; c <= 57; c++)
+{
+putchar(a);
+putchar(b);
+putchar(c);
+
+if (a != 55 || b != 56 || c != 57)
+{
+putchar(44);
+putchar(32);
+}
+}
+}
+}
+putchar(10);
+return (0);
 }
