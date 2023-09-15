@@ -15,13 +15,14 @@ _putchar('\n');
 else
 {
 int x, y;
+
 for (x = 1; x <= size; x++)
 {
 for (y = x; y < size; y++)
 {
 _putchar(' ');
 }
-for (x = 1; y <= x; y++)
+for (y = 1; y <= x; y++)
 {
 _putchar('#');
 }
