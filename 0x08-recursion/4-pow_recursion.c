@@ -3,6 +3,7 @@
 * _pow_recursion - power
 * @x: parameter
 * @y: parameter
+* Return: (0)
 */
 int _pow_recursion(int x, int y)
 {
