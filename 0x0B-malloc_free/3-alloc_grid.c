@@ -20,7 +20,7 @@ for (x = 0; x < height; x++)
 z[x] = malloc(sizeof(int) * width);
 if (z[x] == NULL)
 {
-for (;x >= 0; x--)
+for (; x >= 0; x--)
 free(z[x]);
 free(z);
 return (NULL);
