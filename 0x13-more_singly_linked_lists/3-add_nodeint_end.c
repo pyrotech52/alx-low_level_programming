@@ -21,5 +21,6 @@ return (new_node);
 }
 while (t->next)
 t = t->next;
+t->next = new_node;
 return (new_node);
 }
