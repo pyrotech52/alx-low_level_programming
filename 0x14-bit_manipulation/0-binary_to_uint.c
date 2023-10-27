@@ -4,7 +4,6 @@
  * @b: pointer
  * Return: 0
 */
-#include <stdio.h>
 
 unsigned int binary_to_uint(const char *b)
 {
